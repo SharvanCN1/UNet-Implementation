@@ -1,11 +1,11 @@
 # U-Net implementation using PyTorch on Google Colab
 
-We implement the well-known image segmentatation architecture, [U-Net](https://arxiv.org/abs/1505.04597) for segmentation of neural structures in electron microscopic stacks.
+The well-known image segmentatation architecture is implemented, [U-Net](https://arxiv.org/abs/1505.04597) for segmentation of neural structures in electron microscopic stacks.
 Because [the segmentation challenge website](brainiac2.mit.edu/isbi_challenge/) indicated in 
 [the website](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) 
-of the authors (of the U-Net article) is (apparently) no longer accessible, we use the datasets (i.e., `volumes-train.tif`, `labels-train.tif`, `volumes-test.tif`) shared in [the repository](https://github.com/zhixuhao/unet/tree/master/data/membrane).
+of the authors (of the U-Net article) is (apparently) no longer accessible, the datasets (i.e., `volumes-train.tif`, `labels-train.tif`, `volumes-test.tif`) shared in [the repository](https://github.com/zhixuhao/unet/tree/master/data/membrane) are used.
 
-Our U-Net architecture is inspired by the Coursera course [Apply GANs](https://www.coursera.org/learn/apply-generative-adversarial-networks-gans/home/week/2).
+The U-Net architecture is inspired by the Coursera course [Apply GANs](https://www.coursera.org/learn/apply-generative-adversarial-networks-gans/home/week/2).
 
 ---
 
@@ -19,13 +19,13 @@ on Colab (by using either this [link](https://colab.research.google.com/github/b
 
 ## Training dataset
 
-Our training dataset consists of 30 (512-by-512) input-label image pairs (i.e., `volumes-train.tif`, `labels-train.tif`) and one example of them is as follows:
+The training dataset consists of 30 (512-by-512) input-label image pairs (i.e., `volumes-train.tif`, `labels-train.tif`) and one example of them is as follows:
 
 ![input-label-pair](./images-for-readme/input-label-pair.png)
 
 ## Test dataset and predictions
 
-In like manner, our test dataset (viz., `volumes-test.tif`) comprises a total of 30 (512-by-512) images. Presented below are certain exemplars drawn from the test dataset, together with the corresponding predictions (of our trained U-Net):
+In like manner, the test dataset (viz., `volumes-test.tif`) comprises a total of 30 (512-by-512) images. Presented below are certain exemplars drawn from the test dataset, together with the corresponding predictions (of our trained U-Net):
 
 ![test-images](./images-for-readme/test-images.png)
 
